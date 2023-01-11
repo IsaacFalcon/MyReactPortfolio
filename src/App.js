@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import About from './components/about';
+import Resume from './components/resume';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import Header from './components/header';
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<About/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/resume' element={<Resume/>}/>
       </Routes>
       <Footer></Footer>
       </BrowserRouter>

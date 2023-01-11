@@ -1,16 +1,19 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import profile from "../profile.JPG";
+import MyResume from "../Resume.docx"
 
-function About() {
+function Resume() {
   return (
     <div>
         
-      <div className="about">
+      <div class="aboutme1">
+      <Parallax
+        blur={{ min: -15, max: 15 }}
+        strength={-200}
+    >
         <section id="aboutme" class="aboutme">
-          <img style={{ height: '450px' }} src= {profile} alt="img"></img>
-          <h2>Isaac Falcon's Portfolio</h2>
-          <h3>About Me</h3>
+          <h2>Resume</h2>
+          <button className="dlbutton"><a href={MyResume} download>Download</a></button>
         </section>
 
         <section id="work" class="main aboutmecontent">
@@ -24,9 +27,11 @@ function About() {
             putting many great projects to come in the future.
           </p>
         </section>
+        <div style={{ height: '680px' }} />
+    </Parallax>
       </div>
     </div>
   );
 }
 
-export default About;
+export default Resume;

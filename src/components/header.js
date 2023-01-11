@@ -3,8 +3,8 @@ import Navigation from "./navigation";
 
 function Header() {
   return (
-    <div>
-      <h1>Isaac Falcons Portfolio</h1>
+    <div className="headerflex">
+      <h1>Hello! This Is...</h1>
       <Navigation></Navigation>
     </div>
   );

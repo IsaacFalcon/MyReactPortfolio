@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    <div className="footerflex">
       <h1>Hey guys! I'm a Footer!</h1>
     </div>
   );

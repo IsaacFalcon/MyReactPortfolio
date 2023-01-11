@@ -1,0 +1,139 @@
+:root {
+  --theme: #0c3c78;
+  --accent: #04879c;
+  --dark: #090030;
+  --reds: #f30a49;
+  --white: aliceblue;
+}
+
+* {
+margin-left: 5%;
+margin-right: 5%;
+min-height: fit-content;
+min-width: fit-content;
+}
+
+.navlink {
+    margin: 5px;
+}
+
+.navflex {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.headerflex {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(44, 46, 46);
+}
+
+.headerflex,
+.footerflex,
+.about {
+  background-color: var(--white);
+}
+
+.about {
+  margin-top: 15%;
+}
+
+.footerflex {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+.form {
+    width: 55vw;
+    margin: 20px;
+    border: 5px solid black;
+  }
+  
+  .form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 98%;
+  }
+
+  .form textarea {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 98%;
+    height: 75px;
+  }
+
+  .btn {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 5px;
+    background-color: var(--theme);
+    color: var(--dark);
+    height: 40px;
+    width: 90px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .btn:hover {
+    color: var(--reds);
+    background-color:var(--white);
+    border: solid 1px var(--white);
+    box-shadow: 0 0 10px 2px var(--dark);
+    animation-duration: 750ms;
+    animation: pulse 1.75s;
+  }
+
+  .projects {
+    justify-content: center;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+  }
+
+
+  .wordhelppic {
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    border: 6px solid var(--dark);
+    opacity: 75%;
+  }
+
+  .wordhelppic:hover {
+    width: 550px;
+    height: 300px;
+    border: 6px solid var(--dark);
+    box-shadow: 0 0 10px 2px var(--accent);
+    animation-duration: 750ms;
+    animation: pulse 1.75s;
+    opacity: 100%;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(.85);
+    }
+    70% {
+      transform: scale(1);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+  h1, h2 {
+    color: var(--theme);
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 35px;
+    color:var(--reds);
+  }
+
+  p {
+    font-size: 25px;
+    color: var(--dark);
+  }
