@@ -7,14 +7,12 @@
 }
 
 * {
-margin-left: 5%;
-margin-right: 5%;
-min-height: fit-content;
-min-width: fit-content;
+margin-left: 4%;
+margin-right: 4%;
 }
 
 .navlink {
-    margin: 5px;
+    margin: 50px;
 }
 
 .navflex {
@@ -24,8 +22,7 @@ min-width: fit-content;
 
 .headerflex {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(44, 46, 46);
+    flex-wrap: wrap;
 }
 
 .headerflex,
@@ -40,8 +37,8 @@ min-width: fit-content;
 
 .footerflex {
     display: flex;
-    justify-content:flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .form {
@@ -69,19 +66,18 @@ min-width: fit-content;
     font-size: 20px;
     font-weight: bolder;
     margin: 5px;
-    background-color: var(--theme);
+    background-color: var(--white);
     color: var(--dark);
     height: 40px;
     width: 90px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border: none;
   }
 
   .btn:hover {
     color: var(--reds);
-    background-color:var(--white);
-    border: solid 1px var(--white);
-    box-shadow: 0 0 10px 2px var(--dark);
+    background-color:var(--theme);
+    border: solid 1px var(--dark);
+    box-shadow: 0 0 10px 2px var(--theme);
     animation-duration: 750ms;
     animation: pulse 1.75s;
   }
@@ -89,7 +85,6 @@ min-width: fit-content;
   .projects {
     justify-content: center;
      display: flex;
-     flex-direction: row;
      flex-wrap: wrap;
   }
 
@@ -137,3 +132,38 @@ min-width: fit-content;
     font-size: 25px;
     color: var(--dark);
   }
+
+  @media screen and (max-width:1920px) {
+    * {
+       margin-left: 2%;
+       margin-right: 2%;
+       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    .projects {
+       flex-direction: column;
+       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .projects {
+       flex-direction: column;
+       justify-content: center;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .projects {
+       flex-direction: column;
+    }
+    .navflex {
+      flex-direction: column;
+    }
+    .btn {
+      size: 100%;
+    }
+  }
+ 

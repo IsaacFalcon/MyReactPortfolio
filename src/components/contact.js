@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Parallax } from "react-parallax";
 import "./components.css"
-import { validateEmail } from '../../utils/helpers';
+
 
 function Contact() {
   const [email, setEmail] = useState('');

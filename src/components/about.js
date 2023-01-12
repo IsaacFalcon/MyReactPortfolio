@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax } from "react-parallax";
 import profile from "../profile.JPG";
 
 function About() {
@@ -8,7 +7,7 @@ function About() {
         
       <div className="about">
         <section id="aboutme" class="aboutme">
-          <img style={{ height: '450px' }} src= {profile} alt="img"></img>
+          <img style={{ height: '400px' }} src= {profile} alt="img"></img>
           <h2>Isaac Falcon's Portfolio</h2>
           <h3>About Me</h3>
         </section>
